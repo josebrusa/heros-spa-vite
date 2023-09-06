@@ -30,9 +30,13 @@ export const Navbar = () => {
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto">
-                    <span className="nav-item nav-link text-info">Jose</span>
-                    <button className="nav-item nav-link btn">Logout</button>
+                <ul className="navbar-nav ml-auto d-flex align-items-center">
+                    <span className="nav-item nav-link text-info px-2">
+                        Jose
+                    </span>
+                    <button className="nav-item nav-link btn px-2">
+                        Logout
+                    </button>
                 </ul>
             </div>
         </nav>
