@@ -19,7 +19,7 @@ export const HeroCard = ({
     const heroImgUrl = `/assets/heros/${id}.jpg`;
     return (
         <div
-            className="container  animate__animated animate__fadeIn"
+            className="container animate__animated animate__fadeIn"
             style={{ width: "12rem" }}
         >
             <div className="card" style={{ width: "12rem" }}>
