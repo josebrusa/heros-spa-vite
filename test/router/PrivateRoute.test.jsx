@@ -6,7 +6,7 @@ const { Route, Routes, MemoryRouter } = require("react-router-dom");
 describe("Prueba en Private Route", () => {
     test("debe de mostrar el children si esta autenticado", () => {
         Storage.prototype.setItem = jest.fn();
-        const contextVelue = {
+        const contextValue = {
             logged: true,
             user: {
                 name: "jose",
@@ -14,7 +14,7 @@ describe("Prueba en Private Route", () => {
             },
         };
         render(
-            <AuthContext.Provider value={contextVelue}>
+            <AuthContext.Provider value={contextValue}>
                 <MemoryRouter initialEntries={["/search?q=batman"]}>
                     <PrivateRoute>
                         <h1>Ruta privada</h1>

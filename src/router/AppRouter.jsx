@@ -13,7 +13,9 @@ export const AppRouter = () => {
                     path="login/*"
                     element={
                         <PublicRoute>
-                            <LoginPages />
+                            <Routes>
+                                <Route path="/*" element={<LoginPages />} />
+                            </Routes>
                         </PublicRoute>
                     }
                 />
